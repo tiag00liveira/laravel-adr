@@ -3,11 +3,12 @@
 namespace App\User\Domain\Responders;
 
 use App\User\Domain\Models\User;
+use App\Interfaces\ResponderInterface;
 
-class CreateUserResponder
+class CreateUserResponder implements ResponderInterface
 {
-    public function respond(User $user)
+    public function respond($data)
     {
-        return response()->json($user, 202);
+        return response()->json($data, 202);
     }
 }
