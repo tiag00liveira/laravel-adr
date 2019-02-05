@@ -4,7 +4,7 @@ namespace App\Domain\Payloads;
 
 abstract class Payload
 {
-    protected $data;
+    protected $data = null;
 
     protected $status = 200;
 

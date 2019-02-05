@@ -2,7 +2,9 @@
 
 namespace App\Domain\Payloads;
 
-class ValidationPayload
+use App\Domain\Payloads\Payload;
+
+class ValidationPayload extends Payload
 {
     protected $data;
 

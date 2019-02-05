@@ -2,7 +2,9 @@
 
 namespace App\Domain\Payloads;
 
-class GenericPayload
+use App\Domain\Payloads\Payload;
+
+class GenericPayload extends Payload;
 {
     protected $data;
 
