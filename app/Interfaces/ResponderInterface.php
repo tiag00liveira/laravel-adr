@@ -4,5 +4,5 @@ namespace App\Interfaces;
 
 interface ResponderInterface
 {
-    public function respond(array $data);
+    public function respond();
 }

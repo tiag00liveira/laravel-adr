@@ -20,6 +20,6 @@ class CreateUserAction
     public function __invoke(Request $request)
     {
         $user = $this->service->handle($request->only(['name', 'email', 'password']));
-        return $this->responder->respond($user);
+        return $this->responder->withResponse($user)->respond();
     }
 }

@@ -14,8 +14,20 @@ class CreateUserService implements ServiceInterface
         $this->users = $users;
     }
 
-    public function handle(array $data) : \App\User\Domain\Models\User
+    public function handle(array $data)
     {
-        return $this->users->create($data);
+        if (($validator = $this->validate($data))->fails()) {
+            return new ValidationPayload($validator->getMessageBag());
+        }
+        return new GenericPayload($this->users->create($data));
+    }
+
+    protected function validate($data)
+    {
+        return validator($data, [
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required'
+        ]);
     }
 }
