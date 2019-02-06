@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Domain\Payloads;
+namespace App\Modules\Core\Domain\Payloads;
 
-use App\Domain\Payloads\Payload;
+use App\Modules\Core\Domain\Payloads\Payload;
 
-class GenericPayload extends Payload;
+class GenericPayload extends Payload
 {
     protected $data;
 

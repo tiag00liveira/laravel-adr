@@ -1,10 +1,9 @@
 <?php
 
-namespace App\User\Domain\Responders;
+namespace App\Modules\User\Responders;
 
-use App\User\Domain\Models\User;
-use App\Responders\Responder;
-use App\Interfaces\ResponderInterface;
+use App\Modules\Core\Responders\Responder;
+use App\Modules\Core\Responders\ResponderInterface;
 
 class CreateUserResponder extends Responder implements ResponderInterface
 {

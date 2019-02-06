@@ -6,4 +6,5 @@
     return $request->user();
 }); */
 
-Route::post('/users', App\User\Actions\CreateUserAction::class);
+Route::post('/users', App\Modules\User\Actions\CreateUserAction::class);
+Route::get('/users', App\Modules\User\Actions\ListUserAction::class);

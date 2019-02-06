@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\Payloads;
+namespace App\Modules\Core\Domain\Payloads;
 
 abstract class Payload
 {

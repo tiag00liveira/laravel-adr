@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Interfaces;
+namespace App\Modules\Core\Responders;
 
 interface ResponderInterface
 {

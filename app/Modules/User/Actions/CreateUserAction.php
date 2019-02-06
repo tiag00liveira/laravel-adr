@@ -1,9 +1,9 @@
 <?php
 
-namespace App\User\Actions;
+namespace App\Modules\User\Actions;
 
-use App\User\Domain\Services\CreateUserService;
-use App\User\Domain\Responders\CreateUserResponder;
+use App\Modules\User\Domain\Services\CreateUserService;
+use App\Modules\User\Responders\CreateUserResponder;
 use Illuminate\Http\Request;
 
 class CreateUserAction

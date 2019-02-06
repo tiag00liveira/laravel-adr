@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Responders;
+namespace App\Modules\Core\Responders;
 
-use App\Domain\Payloads ValidationPayload;
+use App\Modules\Core\Domain\Payloads\ValidationPayload;
 
 abstract class Responder
 {

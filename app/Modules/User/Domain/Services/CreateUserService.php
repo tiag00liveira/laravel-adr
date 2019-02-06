@@ -1,15 +1,17 @@
 <?php
 
-namespace App\User\Domain\Services;
+namespace App\Modules\User\Domain\Services;
 
-use App\User\Domain\Repositories\UserRepository;
-use App\Interfaces\ServiceInterface;
+use App\Modules\User\Domain\Repositories\CreateUserRepository;
+use App\Modules\Core\Domain\Services\ServiceInterface;
+use App\Modules\Core\Domain\Payloads\GenericPayload;
+use App\Modules\Core\Domain\Payloads\ValidationPayload;
 
 class CreateUserService implements ServiceInterface
 {
     protected $users;
 
-    public function __construct(UserRepository $users)
+    public function __construct(CreateUserRepository $users)
     {
         $this->users = $users;
     }
